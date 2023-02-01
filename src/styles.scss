@@ -1,0 +1,77 @@
+body {
+  background-color: #018d8d;
+  background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
+}
+
+h1 {
+  font-size: 4em;
+  color: #ffdf3f;
+  margin: 0.4em 0;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.24);
+  &.success-heading {
+    font-size: 5em;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 370px;
+  min-height: 365px;
+  height: fit-content;
+  padding: 2em;
+  background-color: yellowgreen;
+  border-radius: 10px;
+  transition: all ease 0.4s, border-radius ease 0.1s;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.24);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &.succes-form {
+    border-radius: 50%;
+    width: 200px;
+    min-height: 200px;
+
+    i {
+      color: white;
+      font-size: 7em;
+      text-align: center;
+    }
+  }
+
+  .submit-btn {
+    font-size: 1.2em;
+  }
+}
+
+.error-field {
+  border: 2px solid red !important;
+  box-shadow: inset 0 0 3px 1px rgba(255, 0, 0, 0.398),
+    0 0 6px 5px rgba(255, 0, 0, 0.398) !important;
+}
+.error-label {
+  font-size: 1em;
+  border-radius: 4px;
+  color: rgb(127, 0, 0);
+  border: 2px solid red;
+  box-shadow: 0 0 2px 2px rgba(255, 0, 0, 0.398) !important;
+  background-color: rgb(251, 211, 211);
+  width: 100%;
+  padding: 0.2em 0.3em;
+  margin: 0.3em 0 0.5em;
+  height: fit-content;
+  z-index: 99;
+}
